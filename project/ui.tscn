@@ -15,6 +15,6 @@ offset_top = 20.0
 offset_right = 289.0
 offset_bottom = 60.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-text = "GODOT GH PAGES TEST"
+text = "GODOT GH PAGES TEST v1.1"
 fit_content = true
 scroll_following = true
