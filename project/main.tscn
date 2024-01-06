@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://bvxlhstg16pmv"]
+[gd_scene load_steps=5 format=3 uid="uid://bvxlhstg16pmv"]
 
+[ext_resource type="PackedScene" uid="uid://dor0asl021oay" path="res://ui.tscn" id="1_jjac5"]
 [ext_resource type="Script" path="res://rotation.gd" id="1_pn584"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_oitnb"]
@@ -8,6 +9,10 @@
 albedo_color = Color(1, 0.494118, 0, 1)
 
 [node name="Node3D" type="Node3D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" parent="CanvasLayer" instance=ExtResource("1_jjac5")]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.707107, 0.5, 0.5, 2.4663e-16, 0.707107, -0.707107, -0.707107, 0.5, 0.5, 0, 0, 0)
